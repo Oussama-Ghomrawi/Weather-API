@@ -14,8 +14,8 @@ class App extends Component {
     };
   }
 
-  handleInputChange = value => {
-    this.setState({ name: value });
+  handleInputChange = () => {
+    this.setState({ name: "Yahya" });
   };
 
   render() {
