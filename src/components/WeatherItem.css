@@ -1,0 +1,31 @@
+:root {
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+.weather-Item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .weather-Item {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .weather-Item {
+    width: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .weather-Item{
+    width: 50px;
+  }
+}

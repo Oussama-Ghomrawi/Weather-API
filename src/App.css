@@ -71,20 +71,7 @@ body {
   overflow-y: hidden;
   white-space: nowrap;
 }
-.weather-3,
-.weather-6,
-.weather-9,
-.weather-12,
-.weather-15,
-.weather-18,
-.weather-21 {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  justify-content: space-between;
-  align-items: center;
-  width: 70px;
-}
+
 .full-day-weather img {
   width: 120px;
   height: auto;
@@ -115,15 +102,7 @@ span {
     width: 100%;
     margin: 40px auto;
   }
-  .weather-3,
-  .weather-6,
-  .weather-9,
-  .weather-12,
-  .weather-15,
-  .weather-18,
-  .weather-21 {
-    width: 20px;
-  }
+  
   .real-weather img {
     width: 170px;
   }
@@ -153,15 +132,7 @@ span {
     width: 100%;
     margin: 30px auto;
   }
-  .weather-3,
-  .weather-6,
-  .weather-9,
-  .weather-12,
-  .weather-15,
-  .weather-18,
-  .weather-21 {
-    width: 15px;
-  }
+  
 
   .full-day-weather img {
     width: 70px;
@@ -179,15 +150,7 @@ span {
   .full-day-weather {
     width: 100%;
   }
-  .weather-3,
-  .weather-6,
-  .weather-9,
-  .weather-12,
-  .weather-15,
-  .weather-18,
-  .weather-21 {
-    width: 50px;
-  }
+  
 
   .full-day-weather img {
     width: 40px;
