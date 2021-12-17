@@ -2,7 +2,7 @@ import React from "react";
 
 import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
 
-const Weather = () => {
+const Weather = (props) => {
   return (
     <div className="App">
       <body className="weather-content">
@@ -14,14 +14,14 @@ const Weather = () => {
           />
           <p className="weather-status"> overcast clouds</p>
           <span className="temperature">
-            <b>Temperature</b>10&deg; to 11&deg;c
+            <b>Temperature</b>{props.minTemp}&deg; to {props.maxTemp}&deg;c
           </span>
           <div>
             <span className="humidity">
-              <b>Humidity </b>78%
+              <b>Humidity </b>{props.humidity}%
             </span>
             <span className="pressure">
-              <b>Pressure </b>1008.48
+              <b>Pressure </b>{props.pressure}
             </span>
           </div>
         </div>

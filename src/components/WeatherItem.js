@@ -13,7 +13,7 @@ class WeatherItem extends Component {
               src={mostlycloudy}
               alt="mostlycloudy icon"
             />
-            <span>8°C</span>
+            <span>{this.props.temp}</span>
           </div>
     );
   }
