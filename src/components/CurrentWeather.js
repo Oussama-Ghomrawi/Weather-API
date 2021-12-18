@@ -1,21 +1,20 @@
 import React from "react";
 
-import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
+// import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
 
 const Weather = (props) => {
+  
   return (
     <div className="App">
       <body className="weather-content">
         <div className="real-weather">
           <img
             className="live-weather"
-            src={mostlycloudy}
+            src={props.weatherIcon}
             alt="mostlycloudy icon"
           />
-          <p className="weather-status"> overcast clouds</p>
-          <span className="temperature">
-            <b>Temperature</b>{props.minTemp}&deg; to {props.maxTemp}&deg;c
-          </span>
+          <p className="weather-status">{props.weatherStatus}</p>
+          {minmaxTemp(props.minTemp,props.maxTemp)}
           <div>
             <span className="humidity">
               <b>Humidity </b>{props.humidity}%
@@ -30,4 +29,12 @@ const Weather = (props) => {
     </div>
   );
 };
+
+function minmaxTemp(min,max){
+  return(
+<span className="temperature">
+            <b>Temperature</b>{min}&deg; to {max}&deg;c
+          </span>
+  );
+}
 export default Weather;
