@@ -1,20 +1,18 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
-import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
+import React from "react";
+
 import "./WeatherItem.css";
 
-class WeatherItem extends Component {
+class WeatherItem extends React.Component {
   render() {
-    return(
+    return (
       <div className="weather-Item">
-            <span>03:00</span>
-            <img
-              className="Weather-icon"
-              src={mostlycloudy}
-              alt="mostlycloudy icon"
-            />
-            <span>{this.props.temp}</span>
-          </div>
+        <span>{this.props.hour}</span>
+        {this.props.weatherIcon24 ? (
+          <img className="Weather-icon" src={this.props.weatherIcon24} alt="" />
+        ) : null}
+
+        {this.props.temp ? <span>{this.props.temp}&deg;</span> : null}
+      </div>
     );
   }
 }

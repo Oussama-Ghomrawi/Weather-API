@@ -1,9 +1,6 @@
 :root {
   font-family: "Raleway", sans-serif;
 }
-
-
-
 .weather-Item {
   display: flex;
   flex-direction: column;
@@ -12,20 +9,27 @@
   align-items: center;
   width: 70px;
 }
+.weather-Item:hover {
+  background-color: #495d68;
+}
 
-
+/* screen size 992px */
 @media only screen and (max-width: 992px) {
   .weather-Item {
     width: 20px;
   }
 }
+
+/* screen size 768px */
 @media only screen and (max-width: 768px) {
   .weather-Item {
     width: 15px;
   }
 }
+
+/* screen size 600px */
 @media only screen and (max-width: 600px) {
-  .weather-Item{
+  .weather-Item {
     width: 50px;
   }
 }

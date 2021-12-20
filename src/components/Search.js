@@ -1,21 +1,16 @@
 import React from "react";
 
-import clear from "../img/weather-icons/clear.svg";
 import "./Search.css";
 class Search extends React.Component {
-  state = {
-    input: "",
-  };
-
   render() {
     return (
       <header className="weather-header">
-        <form className="weather-form" method="post">
+        <form className="weather-form" onSubmit={this.props.searchWeather}>
           <input
             type="text"
             id="weather-search"
-            placeholder="Enter City Name"
-            name="weather-search"
+            placeholder="Enter Country Name"
+            name="country"
           />
           <button className="find-weather" name="find-weather">
             find weather
@@ -25,4 +20,5 @@ class Search extends React.Component {
     );
   }
 }
+
 export default Search;
